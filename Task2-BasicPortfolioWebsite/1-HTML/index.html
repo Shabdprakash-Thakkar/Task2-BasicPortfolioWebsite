@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Website</title>
+    <link rel="stylesheet" href="../2-CSS/style.css">
+    <script src="https://kit.fontawesome.com/d764a4a62b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="header-text">
+                <p>Web Developer</p>
+                <h1>Hey, I'm <span>Shabdprakash</span><br>Thakkar From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../0-assets/img-2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Shabdprakash Thakkar, a final-year Computer Science student at Sigma Institute. Proficient
+                        in HTML, CSS, JavaScript, React.js, and Node.js, I aspire to excel as a Full Stack Web
+                        Developer. With a passion for crafting user-friendly web applications, I bring hands-on
+                        experience and a commitment to innovation. Eager to contribute positively to the dynamic world
+                        of web development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Completed 10th STD From Sardar Vinay Mandir School</li>
+                            <li><span>2017-2018</span><br>Completed 11-12th Science From Narayan High School</li>
+                            <li><span>2018-2020</span><br>Gap Year</li>
+                            <li><span>2021-2024</span><br>BE Computer Engineering at Sigma Institute Of Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>SAP Code Unnati</span><br>I have learn in code unnati course about AI/ML,
+                                Pyhon, IOT, Cyber Security, Bigdata Analysis and Data Science </li>
+                            <li><span>W3School</span><br>i have Completed full course of HTML CSS
+                                and JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML CSS JavaScript</li>
+                            <li><span>Library</span><br>ReactJs NodeJs</li>
+                            <li><span>OOP</span><br>Python C#</li>
+                            <li><span>Framework</span><br>C#/.Net Python/Django</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="serviecs-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi deserunt atque, sequi ducimus
+                        accusamus doloribus odio adipisci, consectetur suscipit maxime, accusantium ratione id
+                        laboriosam. Modi delectus quas aliquid libero facilis?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi deserunt atque, sequi ducimus
+                        accusamus doloribus odio adipisci, consectetur suscipit maxime, accusantium ratione id
+                        laboriosam. Modi delectus quas aliquid libero facilis?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi deserunt atque, sequi ducimus
+                        accusamus doloribus odio adipisci, consectetur suscipit maxime, accusantium ratione id
+                        laboriosam. Modi delectus quas aliquid libero facilis?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Portfolio-------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="../0-assets/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Product Landing Page</h3>
+                        <p> I designed and developed a captivating landing page showcasing Restaurant Online Store.
+                            Leveraging HTML
+                            and CSS, JavaScript. I structured the layout using columns, ensuring seamless alignment of
+                            components.
+                            Additionally, I demonstrated proficiency in basic image editing techniques, such as
+                            cropping, to enhance visual appeal. This project highlights my skills in web development and
+                            design, particularly in creating engaging product presentations.</p>
+                        <a href="https://github.com/ShabdprakashThakkar/Task1-ProductLandingPage" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../0-assets/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Blood Test System</h3>
+                        <p>During my Python with Django internship, I developed a Blood Test System. This project
+                            streamlined blood testing procedures, enabling efficient sample management and result
+                            tracking. Leveraging Django's framework, I implemented user-friendly interfaces and database
+                            management functionalities, enhancing overall healthcare service delivery.</p>
+                        <a href="https://github.com/ShabdprakashThakkar/Task2-BasicPortfolioWebsite" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../0-assets/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Weather Forecast Web App</h3>
+                        <p> I developed a Weather Forecast Website using JavaScript, Node.js, and ReactJS. This web
+                            application allows users to check the weather forecast for their location and the next five
+                            days. Leveraging real-time data from an API, it provides accurate and timely weather
+                            information, enhancing user experience and convenience.</p>
+                        <a href="https://github.com/ShabdprakashThakkar/Task3-WeatherForecastWebsite" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------------------Contact----------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>no-reply@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="../0-assets/Resume.pdf" target="_blank" download class="btn btn2">Download
+                        Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> copyright © SHABDPRAKASH. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials </p>
+        </div>
+    </div>
+
+    <script src="../3-JavaScript/script.js"></script>
+</body>
+
+</html>
